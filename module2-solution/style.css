@@ -1,0 +1,119 @@
+/*General body styling*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 1;
+	padding: 0;
+}
+/*General h1 styling*/
+h1 {
+	font-size: 1.75em;
+	text-align: center;
+}
+/* applying box sizing */
+*{
+	box-sizing: border-box;
+}
+/*stylying for each menu box*/
+#menuBox {
+	background-color: #808080;
+	border-color: #000000;
+	border-width: 2px;
+    border-style: solid; 
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin:auto;
+	margin-bottom: 10px;
+}
+/* Clear float right for content box */
+#contentBox{
+	clear:right;
+}
+/* Styling for the Chicken menu item */
+#itemChicken{
+	background-color: #fdc3bc;
+	float: right;
+	font-size: 1.25em;
+	border-color: #000000;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+    border-style: solid;
+    text-align: center;
+    padding: 5px;
+}
+/* Styling for the Beef menu item */
+#itemBeef{
+	background-color: #cc0000;
+	color: #ffffff;
+	float: right;
+	font-size: 1.25em;
+	border-color: #000000;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+    border-style: solid;
+    text-align: center;
+    padding: 5px;
+}
+/* Styling for the Sushi menu item */
+#itemSushi{
+	background-color: #fffaaf;
+	float: right;
+	font-size: 1.25em;
+	border-color: #000000;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+    border-style: solid;
+    text-align: center;
+    padding: 5px;
+}
+/*Responsesive framework*/
+.row{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Desktop Devices (992px and up)*/
+@media (min-width: 992px){
+	.row {
+        justify-content: space-between;
+    }
+	.col-lg-4 {
+		float:left;
+		width: calc(33.33% - 10px); /* Adjust width to account for margin and prevent overlflow */
+        margin-right: 10px;
+	}
+}
+/*Tablet Devices 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px){
+	.row {
+        justify-content: space-between;
+    }
+	.col-md-6 {
+		float:left;
+		width: calc(50% - 10px); /* Adjust width to account for margin and prevent overlflow */
+        margin-right: 10px;
+	}
+	.col-md-12 {
+		float:left;
+		width: calc(100% - 10px); /* Slightly less than 100% to align with col-med-6 alignment visiually */
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+}
+/*Mobile Devices 767px and below*/
+@media (max-width: 767px){
+	.row {
+        justify-content: space-between;
+    }
+	.col-sm-12 {
+		float:left;
+		width: 100%;
+	}
+}
