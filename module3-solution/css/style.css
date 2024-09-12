@@ -1,0 +1,92 @@
+
+ /** Body **/
+ body, p {
+  /*font source https://fonts.google.com/specimen/Montserrat*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+ }
+
+/** Header **/
+#header-nav { 
+  background-color:#1b2123;
+  border-radius: 0;
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ }
+
+ #company-name{
+  font-size: 50px;
+  text-decoration: none;
+ }
+ #company-logo {
+  width: 180px;
+  height: 180px;
+ }
+
+ div.container {
+  margin:auto 0;
+  padding:0;
+ }
+
+h1 {
+  color: #ffffff;
+  margin:auto 0;
+ }
+
+ div.navbar-brand { /*Food, LLC CSS*/
+  padding: 0;
+  padding-left: 25px;
+  padding-top: 5px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+ .navbar-brand a:hover, .navbar-brand a:focus { /*Food, LLC CSS*/
+  text-decoration: none;
+ }
+
+ .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #007FFF;
+ }
+
+ #nav-list {
+  margin-top:10px;
+ }
+
+ #nav-list a {
+  color:#007FFF;
+  text-align: center;
+  background-color: #e0e0e0;
+ }
+
+ #nav-list a:hover {
+  background:#A9A9A9;
+ }
+
+ .navbar-header button.navbar-toggle, .navbat-header .icon-bar {
+  border: 1px solid #007FFF;
+ }
+
+ #main-content {
+  margin-left:80px;
+  margin-right:80px;
+  margin-bottom:50px;
+ }
+
+ #maintext {
+    background-color: #e0e0e0; /* Gray box color */
+    padding: 20px; /* Add padding inside the box */
+    border-radius: 5px;
+}
+#header-nav.navbar.navbar-default {
+  padding: 0px;
+}
+#nav-list.nav.navbar-nav.navbar-right {
+  margin: auto 0;
+  margin-bottom: 2px;
+  margin-ledt: 2px;
+  margin-right: 2px;
+}
